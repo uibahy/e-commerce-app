@@ -17,5 +17,4 @@ function App() {
     </div>
   );
 }
-// Hello world
 export default App;
