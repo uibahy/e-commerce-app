@@ -2,6 +2,8 @@ import Navbar from './components/Navbar'
 import Slider from './components/Slider'
 import ProductsList from './components/ProductsList'
 import Product from './components/Product'
+import ProductDetails from './components/ProductDetails'
+
 import { Route, Routes } from 'react-router-dom'
 import About from './components/About'
 
@@ -25,6 +27,7 @@ function App() {
         />
 
         <Route path='about' element={<About/>} />
+        <Route path='product/:productId' element={<ProductDetails/>}/>
       </Routes>
     </div>
   );

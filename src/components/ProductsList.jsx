@@ -19,13 +19,15 @@ function ProductsList(){
             <div className="row">
                 {products.length === 0 ? <Loading /> : null}
                 {products.map((product) => {
-                   return (<Product 
-                        key = {product.id}
-                        title={product.title}
-                        text={product.description}
-                        img={product.image}
-                        price={product.price}
-                    />)
+                   return (<Product product={product} key={product.id}/>)
+                //    return (<Product 
+                //         key= {product.id}
+                //         id= {product.id}
+                //         title={product.title}
+                //         text={product.description}
+                //         img={product.image}
+                //         price={product.price}
+                //     />)
                 })}
             </div>
         </div>
