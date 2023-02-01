@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import Loading from 'react-simple-loading';
 import Product from './Product'
+import { Link } from "react-router-dom";
 
 
 function ProductDatails(){
@@ -17,8 +18,8 @@ function ProductDatails(){
 
     return(
         <>
-            {product.length === 0 ? <Loading />: null}
-            <Product product={product}/>
+            <Link to={`/`} className="btn btn-secondary mt-24"> Back </Link>
+            {product.length === 0 ? <Loading />:<Product product={product} showButton={false}/>}
         </>
     )
 }

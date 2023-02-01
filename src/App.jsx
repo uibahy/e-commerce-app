@@ -4,6 +4,7 @@ import ProductsList from './components/ProductsList'
 import Product from './components/Product'
 import ProductDetails from './components/ProductDetails'
 
+
 import { Route, Routes } from 'react-router-dom'
 import About from './components/About'
 
@@ -21,7 +22,8 @@ function App() {
           element={
             <>
               <Slider/>
-              <ProductsList/>
+              {/* <Filter /> */}
+              <ProductsList category="jewelery"/>
             </>
           } 
         />

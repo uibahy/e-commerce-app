@@ -12,7 +12,8 @@ function Product (props){
                 <div className="card-body">
                     <h5 className="card-title pro-text">{product.title}</h5>
                     <p className="card-text pro-text">{product.text}</p>
-                    <Link to={`product/${product.id}`} className="btn btn-primary">Buy it for {product.price}$</Link>
+                    <p className="card-text pro-text">Price: {product.price}$</p>
+                    {props.showButton ?? <Link to={`product/${product.id}`} className="btn btn-primary">Buy it for {product.price}$</Link>}
                 </div>
             </div>        
         </div>
