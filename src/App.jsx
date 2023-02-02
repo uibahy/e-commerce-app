@@ -3,12 +3,8 @@ import Slider from './components/Slider'
 import ProductsList from './components/ProductsList'
 import Product from './components/Product'
 import ProductDetails from './components/ProductDetails'
-
-
 import { Route, Routes } from 'react-router-dom'
 import About from './components/About'
-
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 
