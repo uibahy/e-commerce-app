@@ -28,6 +28,7 @@ function App() {
         <Route path='product/:productId' element={<ProductDetails/>}/>
       </Routes>
     </div>
+    
   );
 }
 // bahy
